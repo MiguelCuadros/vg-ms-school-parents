@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: vg-ms-school-parents
+  data:
+    mongodb:
+      uri: mongodb+srv://admin:1234@mariaenriqueta.f47y4yu.mongodb.net/vg-ms-mariaenriqueta?retryWrites=true&w=majority
+  microservices:
+    family:
+      url: https://vg-ms-enrollment-production-74d2.up.railway.app/public/families/v1
+    teacher:
+      url: https://vg-ms-teacher-production-751f.up.railway.app/public/teachers/v1
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /api/school-parents
+
+management:
+  endpoint:
+    health:
+      show-details: always
+
+api:
+  version: /v1
